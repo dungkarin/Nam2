@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Liên Hệ</title>
+	<link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="LienHe.css" />
+</head>
+<body>
+<header>
+  <nav class="navbar">
+      <ul>
+        <li><a href="http://banduoiutc.epizy.com/Manh/HomePage.html"><img src="carmudi-logo.svg"/></a></li>
+       <li><a href="http://banduoiutc.epizy.com/Chien/muaxe.html">Mua xe</a></li>
+				<li><a href="http://banduoiutc.epizy.com/Cuong/banxe.html">Bán xe</a></li>
+				<li><a href="http://banduoiutc.epizy.com/Tuan/phukien.html">Phụ kiện</a></li>
+					<li><a href="http://banduoiutc.epizy.com/Dung/LienHe.html">Phản hôi</a></li>
+				<li><i class="material-icons"> local_phone </i> 0333 666 999</li>
+				<li>
+					<i class="material-icons"> person </i>
+					<a href="http://banduoiutc.epizy.com/Dung/DangNhap.html">Đăng nhập</a>
+					<span>|</span>
+					<a href="http://banduoiutc.epizy.com/Dung/DangKy.html">Đăng ký</a>
+				</li>
+      </ul>
+    </nav>
+  </header>
+  <div style="background-color: #212121;">
+    <nav>
+            <img src="Image/banner.png" style="height: 300px" />
+    </nav>
+  </div>
+      <section>
+    <nav>
+
+    <h1>Ý Kiến Phản Hồi</h1>
+
+    <form action="http://banduoi.net" method="get">
+    <label>Tên khách hàng:</label>
+    <input name="Tên" type="text"placeholder="Nhập tên của bạn......" value=""><br>
+
+    <label>Địa chỉ:</label>
+    <input name="Địa chỉ" type="text"placeholder="Nhập địa chỉ của bạn......" value=""><br>
+
+    <label>SĐT:</label>
+    <input name="SĐT" type="text"placeholder="Nhập SĐT di động của bạn......" value=""><br>
+
+    <label>Email:</label>
+    <input name="Email" type="text"placeholder="Nhập Email của bạn......" value=""><br>
+
+    <label>Vấn đề gặp phải:</label><br>
+    <textarea id="###" name="?" placeholder="Nhập vấn đề của bạn......"></textarea><br>
+
+    <input type="button" onclick="alert('Chúng tôi đã nhận được ý kiến của bạn. Chúng tôi sẽ phản hồi trong thời gian sớm nhất.')" value="Gửi">
+    </form>  
+  </nav>
+</section>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="Image/car1.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="Image/car2.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="Image/car3.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="Image/car4.jpg" style="width: 100%" />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="Image/car5.jpg" style="width: 100%" />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="Image/car6.jpg" style="width: 100%" />
+        </div>
+
+      <div style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+   
+  
+<script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000);
+      }
+    </script>
+<footer>
+      <div class="footer">
+        <p>CÔNG TY TNHH XE BANDUOI. Hotline: 0333666999 (Toàn quốc)</p>
+        <p>Địa chỉ: 3 Cầu Giấy, Láng Thượng, Đống Đa, Hà Nội.</p>
+        <p>
+          CarDB Vienam là một công ty thành viên của tập đoàn
+          <strong>Bàn Dưới</strong> Group
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
